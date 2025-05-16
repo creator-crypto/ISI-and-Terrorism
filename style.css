@@ -1,0 +1,120 @@
+/* Theme: Pahalgam Attack & WW3 - Somber, Serious, Impactful */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+:root {
+  --background-color: #1a1a1a;      /* Very dark gray */
+  --text-color: #e0e0e0;            /* Light gray */
+  --accent-color: #b22222;          /* Firebrick red for seriousness */
+  --highlight-color: #ff4500;       /* OrangeRed for urgency */
+  --link-color: #ff6347;            /* Tomato */
+  --font-family: 'Roboto Slab', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+a:hover, a:focus {
+  border-bottom: 2px solid var(--highlight-color);
+  outline: none;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  margin: 1.5em 0;
+  padding-left: 1em;
+  font-style: italic;
+  color: #ccc;
+  background-color: #2b2b2b;
+  border-radius: 4px;
+}
+
+code, pre {
+  background-color: #333;
+  color: #f08080; /* light coral */
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+button, .btn {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  padding: 0.8em 1.5em;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--highlight-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1em;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(178, 34, 34, 0.6);
+}
+
+/* Specific styling for warnings or urgent messages */
+.warning {
+  background-color: #b22222;
+  color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  font-weight: 700;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #444;
+  padding-top: 1em;
+}
